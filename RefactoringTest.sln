@@ -1,8 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyApp.Consumer", "LegacyApp.Consumer\LegacyApp.Consumer.csproj", "{CA784960-75EE-4EB6-808A-A54BAE4A72C5}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegacyApp.Consumer", "LegacyApp.Consumer\LegacyApp.Consumer.csproj", "{CA784960-75EE-4EB6-808A-A54BAE4A72C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyApp", "LegacyApp\LegacyApp.csproj", "{C0E35137-EE80-4AC9-96E3-E927718A6FAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegacyApp", "LegacyApp\LegacyApp.csproj", "{C0E35137-EE80-4AC9-96E3-E927718A6FAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F436BA27-59B2-4C5C-BDB5-D16E52C81E8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyApp.Tests", "Tests\LegacyApp.Tests\LegacyApp.Tests.csproj", "{01F96743-53D1-4150-B813-70171C99E6E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +25,18 @@ Global
 		{C0E35137-EE80-4AC9-96E3-E927718A6FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0E35137-EE80-4AC9-96E3-E927718A6FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0E35137-EE80-4AC9-96E3-E927718A6FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F96743-53D1-4150-B813-70171C99E6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F96743-53D1-4150-B813-70171C99E6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F96743-53D1-4150-B813-70171C99E6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F96743-53D1-4150-B813-70171C99E6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{01F96743-53D1-4150-B813-70171C99E6E8} = {F436BA27-59B2-4C5C-BDB5-D16E52C81E8A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDE764B6-4356-4029-83A9-137D04E55197}
 	EndGlobalSection
 EndGlobal
