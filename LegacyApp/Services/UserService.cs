@@ -126,10 +126,10 @@ namespace LegacyApp
         /// Validates the user age.
         /// </summary>
         /// <param name="dateOfBirth">The date of birth.</param>
-        /// <returns></returns>
+        /// <returns>True if dateOfBirth + 21 years is lower than DateTime.Today</returns>
         private static bool ValidateAge(DateTime dateOfBirth)
         {
-            return dateOfBirth.AddYears(21) < DateTime.Now;
+            return dateOfBirth.AddYears(21).AddDays(-1) < DateTime.Today;
         }
     }
 }

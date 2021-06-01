@@ -50,9 +50,15 @@
         [Fact]
         public void ShouldRejectDueToAge()
         {
+            var client = new Client() { Name = "VeryImportantClient" };
+            clientRepositoryMock.Setup(c => c.GetById(It.IsAny<int>())).Returns(client);
+
             var date = new DateTime(2010, 1, 1);
             var addResult = this.userService.AddUser("John", "Doe", "John.doe@gmail.com", date, 4);
             Assert.False(addResult);
+
+            addResult = this.userService.AddUser("John", "Doe", "John.doe@gmail.com", DateTime.Today.AddYears(-21), 4);
+            Assert.True(addResult);
         }
 
         [Fact]
